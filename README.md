@@ -4,4 +4,7 @@ Output:-
 ![output](https://github.com/akhtarnadeem915/Audio_classification/blob/master/cough_detection.png)
 
 # Code to convert audio file into Mel-Spectogram
-![output](https://github.com/akhtarnadeem915/Audio_classification/blob/master/audio2image.png)
+![output](https://github.com/akhtarnadeem915/Audio_classification/blob/master/audio2image.png)   
+
+Barking audio was used for inference.
+![output](https://github.com/akhtarnadeem915/Audio_classification/blob/master/bark.png)
