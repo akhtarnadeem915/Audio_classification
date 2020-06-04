@@ -19,4 +19,12 @@ test_generator = test_datagen.flow_from_directory(
         class_mode='binary',
         shuffle=False)
 model = tf.keras.models.load_model('model.h5')
-print("classification: ",model.predict_generator(test_generator))    
+print("classification: ",model.predict_generator(test_generator))
+inference = model.predict_generator(test_generator)
+print("classification: ",inference)
+cough = inference[0][0]
+not_cough = inference[0][1]
+class_ = [cough,not_cough]
+output = class_.index(max(cough,not_cough))
+
+print("final inference: ",output)
