@@ -62,4 +62,6 @@ test_generator = test_datagen.flow_from_directory(
         class_mode='binary',
         shuffle=False)
 
+model.save('model.h5')
+
 print("classification: ",model.predict_generator(test_generator))    
